@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1484811140 source:c:\users\cleophas\desktop\c_programs\practice\main.c
+	<stdio.h>
+	<stdlib.h>
+	"MyInfo.h"
+
+1484811165 c:\users\cleophas\desktop\c_programs\practice\myinfo.h
+

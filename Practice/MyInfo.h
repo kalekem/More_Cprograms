@@ -1,0 +1,2 @@
+#define MYNAME "CLEOPHAS KALEKEM"
+#define MYAGE 23
