@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1485752141 source:c:\users\cleophas\desktop\c_programs\freeglut\main.c
+1485753932 source:c:\users\cleophas\desktop\c_programs\triangleglut\main.cpp
 	<GL/glut.h>
 	<stdio.h>
 
@@ -236,4 +236,8 @@
 1341006780 c:\program files (x86)\codeblocks\mingw\include\sys\types.h
 	<_mingw.h>
 	<stddef.h>
+
+1485754546 source:c:\users\cleophas\desktop\c_programs\triangleglut\main.c
+	<GL/glut.h>
+	<stdio.h>
 
