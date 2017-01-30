@@ -102,6 +102,11 @@ int main()
     avgProfit = (float)(pricePerPumpkin * (float)sales) / (float)daysWorked;
     printf("Average daily profit: $%.2f\n", avgProfit);
 
+    int tuna = 19;
+    printf("Address \t Name \t Value \n")
+    printf("Address \t Name \t Value \n")
+    printf("%p \t %s \t %d \n", &tuna, "tuna", tuna);
+
 
 
 
