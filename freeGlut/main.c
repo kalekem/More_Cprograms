@@ -1,14 +1,17 @@
 #include <GL/glut.h>
 #include <stdio.h>
 
+//RULES: give your objects as close to zero as much as possible
+
 float counter = 0.0;
 
 void display(){
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT); //over draws the background color with this color
 
     glLoadIdentity();
-    glTranslatef(counter/300, 0.0, 0.0); //translates the 1st triangle
+    glTranslatef(counter/300, 0.0, -4.0); //translates the 1st triangle
     glRotatef(counter, 0.0, 1.0, 0.0);
+
     counter +=0.03; //increases the rotation angle by 0.1
 
     if (counter >200) {
@@ -21,34 +24,34 @@ void display(){
         glColor3f(0.0, 1.0, 0.0); //setting the color to green
         //creates the geometric point
         //x, y, z
-        glVertex3f(-0.5, -0.5, 5.0);
+        glVertex3f(-0.5, -0.5, 0.0);
 
         glColor3f(1.0, 0.0, 0.0); //setting the color to red
-        glVertex3f(0.5, -0.5, 5.0);
+        glVertex3f(0.5, -0.5, 0.0);
 
         glColor3f(0.0, 0.0, 1.0); //setting the color to blue
-        glVertex3f(0.0, 0.5, 5.0);
+        glVertex3f(0.0, 0.5,0.0);
 
     glEnd(); //ends the drawing
 
     //2nd tringle
     glLoadIdentity();
-    glTranslatef(0.0, -0.5, 0.0); //moves the 2nd triangle to the left side
+    glTranslatef(0.0, -0.5, -4.0); //moves the 2nd triangle to the left side
     glRotatef(5, 0.0, 1.0, 0.0);
 
     glBegin(GL_TRIANGLES); //begins the drawing
         //set the color for all the upcoming draw calls
         //red, green, blue
-        glColor3f(1.0, 0.0, 5.0); //setting the color to green
+        glColor3f(1.0, 0.0, -2.0); //setting the color to green
         //creates the geometric point
         //x, y, z
         glVertex3f(-0.9, -0.1, 0.0);
 
         glColor3f(0.0, 0.0, 1.0); //setting the color to red
-        glVertex3f(0.1, -0.1, 5.0);
+        glVertex3f(0.1, -0.1, 0.0);
 
         glColor3f(0.0, 1.0, 0.0); //setting the color to blue
-        glVertex3f(-0.5, 0.9, 5.0);
+        glVertex3f(-0.5, 0.9, 0.0);
 
     glEnd(); //ends the drawing
 
